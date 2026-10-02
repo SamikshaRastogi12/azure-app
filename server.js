@@ -16,21 +16,3 @@ http.createServer((req, res) => {
   });
 }).listen(process.env.PORT || 8080);
 
-
-const express = require("express");
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.get("/config", (req, res) => {
-    res.send(`
-        <h1>Azure Configuration</h1>
-        <p>${process.env.APP_MESSAGE}</p>
-    `);
-});
-
-app.use(express.static("public"));
-
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
