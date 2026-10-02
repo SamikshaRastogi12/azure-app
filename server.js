@@ -15,4 +15,3 @@ http.createServer((req, res) => {
     res.end(data);
   });
 }).listen(process.env.PORT || 8080);
-
