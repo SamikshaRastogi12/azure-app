@@ -1,0 +1,12 @@
+{
+  "name": "azure-app",
+  "version": "1.0.0",
+  "description": "My first Azure App Service application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
